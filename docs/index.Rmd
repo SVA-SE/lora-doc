@@ -38,11 +38,11 @@ setwd("C:/Users/alfredo.acosta/OneDrive - SVA/LORA/Working example/ocurrence_of_
 ## Reading infur
 ```{r warning=FALSE}
 w <- read_xlsx("infur_20230407.xlsx")
-# colnames(w)
-# table(w$reporting_level)
-# table(w$disease_eng)
-# table(w$Species, w$is_wild == TRUE) #wild species
-# table(w$Species[w$is_wild == FALSE]) #domestic species
+colnames(w)
+table(w$reporting_level)
+table(w$disease_eng)
+table(w$Species, w$is_wild == TRUE) #wild species
+table(w$Species[w$is_wild == FALSE]) #domestic species
 # 
 # View(w[w$disease_eng == "Rabies virus (Inf. with)" | w$disease_esp == "Cattle",])
 # View(w[w$disease_eng == "Bluetongue virus (Inf. with)" | w$disease_esp == "Cattle",])
